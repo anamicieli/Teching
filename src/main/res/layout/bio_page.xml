@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/appbarTitle"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/bio_profile"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:background="@color/purple_500"
+        />
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/appbarTitle"
+        android:background="@color/purple_500"
+        android:src="@drawable/back_icon" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+       android:layout_below="@+id/appbarTitle"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:background="@color/white"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/ic_message" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/bio_profile_image"
+        android:layout_below="@+id/appbarTitle"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/elon"
+        android:layout_centerHorizontal="true"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#2B2B2B"
+        android:layout_marginTop="25dp"/>
+
+    <EditText
+        android:id="@+id/bio_name"
+        android:layout_below="@+id/bio_profile_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:fontFamily="serif-monospace"
+        android:hint="@string/user_personalName"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:layout_marginTop="25dp"/>
+
+    <EditText
+        android:id="@+id/bio_Textbox"
+        android:layout_below="@+id/bio_name"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:ems="15"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:hint="@string/bioFiller"
+        android:inputType="text"
+        android:drawablePadding="8dp"
+        android:elevation="6dp"
+        android:paddingStart="6dp"
+        android:textSize="15sp"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:id="@+id/nextBtn_findPartner"
+        android:layout_below="@+id/bio_Textbox"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#9C5ADF"
+        android:textColor="@color/white"
+        android:text="Find A Partner"
+        android:paddingTop="10dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:id="@+id/nextBtn_messageBox"
+        android:layout_below="@+id/nextBtn_findPartner"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#9C5ADF"
+        android:textColor="@color/white"
+        android:text="Messages"
+        android:paddingTop="10dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="25dp" />
+
+</RelativeLayout>
+</ScrollView>
